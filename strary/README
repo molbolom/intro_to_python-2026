@@ -1,9 +1,0 @@
-
-
-	teststrary "string 1" "string 2"
-
-	Convert a string into an array, with the strings appended
-	to the array so only one free() call is needed.
-
-
-	

@@ -1,0 +1,27 @@
+0000000000400530 <_isnumber>:
+  400530:	48 31 c0             	xor    rax,rax
+  400533:	b4 02                	mov    ah,0x2
+
+0000000000400535 <_isnumber_loop>:
+  400535:	8a 07                	mov    al,BYTE PTR [rdi]
+  400537:	84 c0                	test   al,al
+  400539:	74 18                	je     400553 <_isnumber_exit>
+  40053b:	48 ff c7             	inc    rdi
+  40053e:	2c 2e                	sub    al,0x2e
+  400540:	74 0a                	je     40054c <_isnumber_dec_char>
+  400542:	2c 02                	sub    al,0x2
+  400544:	72 0a                	jb     400550 <_isnumber_notnum>
+  400546:	3c 0a                	cmp    al,0xa
+  400548:	7f 06                	jg     400550 <_isnumber_notnum>
+  40054a:	eb e9                	jmp    400535 <_isnumber_loop>
+
+000000000040054c <_isnumber_dec_char>:
+  40054c:	d0 ec                	shr    ah,1
+  40054e:	73 e5                	jae    400535 <_isnumber_loop>
+
+0000000000400550 <_isnumber_notnum>:
+  400550:	66 31 c0             	xor    ax,ax
+
+0000000000400553 <_isnumber_exit>:
+  400553:	c3                   	ret
+

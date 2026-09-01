@@ -1,0 +1,661 @@
+0000000000401682 <__pyx_pw_12pytestnumber_1_isnumber>:
+  401682:	55                   	push   rbp
+  401683:	48 89 e5             	mov    rbp,rsp
+  401686:	48 81 ec 90 00 00 00 	sub    rsp,0x90
+  40168d:	48 89 7d 88          	mov    QWORD PTR [rbp-0x78],rdi
+  401691:	48 89 75 80          	mov    QWORD PTR [rbp-0x80],rsi
+  401695:	48 89 95 78 ff ff ff 	mov    QWORD PTR [rbp-0x88],rdx
+  40169c:	48 89 8d 70 ff ff ff 	mov    QWORD PTR [rbp-0x90],rcx
+  4016a3:	48 c7 45 c8 00 00 00 	mov    QWORD PTR [rbp-0x38],0x0
+  4016aa:	00 
+  4016ab:	48 c7 45 a0 00 00 00 	mov    QWORD PTR [rbp-0x60],0x0
+  4016b2:	00 
+  4016b3:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [rbp-0x4],0x0
+  4016ba:	48 c7 45 f0 00 00 00 	mov    QWORD PTR [rbp-0x10],0x0
+  4016c1:	00 
+  4016c2:	c7 45 c4 00 00 00 00 	mov    DWORD PTR [rbp-0x3c],0x0
+  4016c9:	48 c7 45 b8 00 00 00 	mov    QWORD PTR [rbp-0x48],0x0
+  4016d0:	00 
+  4016d1:	48 8b 85 78 ff ff ff 	mov    rax,QWORD PTR [rbp-0x88]
+  4016d8:	48 8d 14 c5 00 00 00 	lea    rdx,[rax*8+0x0]
+  4016df:	00 
+  4016e0:	48 8b 45 80          	mov    rax,QWORD PTR [rbp-0x80]
+  4016e4:	48 01 d0             	add    rax,rdx
+  4016e7:	48 89 45 b0          	mov    QWORD PTR [rbp-0x50],rax
+  4016eb:	b8 00 50 41 00       	mov    eax,0x415000
+  4016f0:	48 05 b8 00 00 00    	add    rax,0xb8
+  4016f6:	48 89 45 90          	mov    QWORD PTR [rbp-0x70],rax
+  4016fa:	48 c7 45 98 00 00 00 	mov    QWORD PTR [rbp-0x68],0x0
+  401701:	00 
+  401702:	48 83 bd 70 ff ff ff 	cmp    QWORD PTR [rbp-0x90],0x0
+  401709:	00 
+  40170a:	74 15                	je     401721 <__pyx_pw_12pytestnumber_1_isnumber+0x9f>
+  40170c:	48 8b 85 70 ff ff ff 	mov    rax,QWORD PTR [rbp-0x90]
+  401713:	48 89 c7             	mov    rdi,rax
+  401716:	e8 0a fc ff ff       	call   401325 <PyTuple_GET_SIZE>
+  40171b:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+  40171f:	eb 08                	jmp    401729 <__pyx_pw_12pytestnumber_1_isnumber+0xa7>
+  401721:	48 c7 45 e8 00 00 00 	mov    QWORD PTR [rbp-0x18],0x0
+  401728:	00 
+  401729:	48 83 7d e8 00       	cmp    QWORD PTR [rbp-0x18],0x0
+  40172e:	0f 95 c0             	setne  al
+  401731:	0f b6 c0             	movzx  eax,al
+  401734:	48 85 c0             	test   rax,rax
+  401737:	79 14                	jns    40174d <__pyx_pw_12pytestnumber_1_isnumber+0xcb>
+  401739:	48 c7 45 f0 28 eb 40 	mov    QWORD PTR [rbp-0x10],0x40eb28
+  401740:	00 
+  401741:	c7 45 fc 05 00 00 00 	mov    DWORD PTR [rbp-0x4],0x5
+  401748:	e9 86 01 00 00       	jmp    4018d3 <__pyx_pw_12pytestnumber_1_isnumber+0x251>
+  40174d:	48 83 7d e8 00       	cmp    QWORD PTR [rbp-0x18],0x0
+  401752:	0f 8e f1 00 00 00    	jle    401849 <__pyx_pw_12pytestnumber_1_isnumber+0x1c7>
+  401758:	48 83 bd 78 ff ff ff 	cmp    QWORD PTR [rbp-0x88],0x0
+  40175f:	00 
+  401760:	74 21                	je     401783 <__pyx_pw_12pytestnumber_1_isnumber+0x101>
+  401762:	48 83 bd 78 ff ff ff 	cmp    QWORD PTR [rbp-0x88],0x1
+  401769:	01 
+  40176a:	0f 85 2d 01 00 00    	jne    40189d <__pyx_pw_12pytestnumber_1_isnumber+0x21b>
+  401770:	48 8b 45 80          	mov    rax,QWORD PTR [rbp-0x80]
+  401774:	48 8b 00             	mov    rax,QWORD PTR [rax]
+  401777:	48 89 c7             	mov    rdi,rax
+  40177a:	e8 e9 fe ff ff       	call   401668 <__Pyx_NewRef>
+  40177f:	48 89 45 a0          	mov    QWORD PTR [rbp-0x60],rax
+  401783:	90                   	nop
+  401784:	48 8b 85 78 ff ff ff 	mov    rax,QWORD PTR [rbp-0x88]
+  40178b:	48 89 45 a8          	mov    QWORD PTR [rbp-0x58],rax
+  40178f:	48 8b 7d a8          	mov    rdi,QWORD PTR [rbp-0x58]
+  401793:	48 8d 4d a0          	lea    rcx,[rbp-0x60]
+  401797:	48 8d 55 90          	lea    rdx,[rbp-0x70]
+  40179b:	48 8b 75 b0          	mov    rsi,QWORD PTR [rbp-0x50]
+  40179f:	48 8b 85 70 ff ff ff 	mov    rax,QWORD PTR [rbp-0x90]
+  4017a6:	48 83 ec 08          	sub    rsp,0x8
+  4017aa:	6a 00                	push   0x0
+  4017ac:	68 50 ed 40 00       	push   0x40ed50
+  4017b1:	ff 75 e8             	push   QWORD PTR [rbp-0x18]
+  4017b4:	49 89 f9             	mov    r9,rdi
+  4017b7:	49 89 c8             	mov    r8,rcx
+  4017ba:	b9 00 00 00 00       	mov    ecx,0x0
+  4017bf:	48 89 c7             	mov    rdi,rax
+  4017c2:	e8 4d 44 00 00       	call   405c14 <__Pyx_ParseKeywords>
+  4017c7:	48 83 c4 20          	add    rsp,0x20
+  4017cb:	85 c0                	test   eax,eax
+  4017cd:	79 14                	jns    4017e3 <__pyx_pw_12pytestnumber_1_isnumber+0x161>
+  4017cf:	48 c7 45 f0 28 eb 40 	mov    QWORD PTR [rbp-0x10],0x40eb28
+  4017d6:	00 
+  4017d7:	c7 45 fc 05 00 00 00 	mov    DWORD PTR [rbp-0x4],0x5
+  4017de:	e9 f0 00 00 00       	jmp    4018d3 <__pyx_pw_12pytestnumber_1_isnumber+0x251>
+  4017e3:	48 8b 85 78 ff ff ff 	mov    rax,QWORD PTR [rbp-0x88]
+  4017ea:	48 89 45 e0          	mov    QWORD PTR [rbp-0x20],rax
+  4017ee:	eb 50                	jmp    401840 <__pyx_pw_12pytestnumber_1_isnumber+0x1be>
+  4017f0:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  4017f4:	48 8b 44 c5 a0       	mov    rax,QWORD PTR [rbp+rax*8-0x60]
+  4017f9:	48 85 c0             	test   rax,rax
+  4017fc:	0f 94 c0             	sete   al
+  4017ff:	0f b6 c0             	movzx  eax,al
+  401802:	48 85 c0             	test   rax,rax
+  401805:	74 34                	je     40183b <__pyx_pw_12pytestnumber_1_isnumber+0x1b9>
+  401807:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  40180b:	49 89 c0             	mov    r8,rax
+  40180e:	b9 01 00 00 00       	mov    ecx,0x1
+  401813:	ba 01 00 00 00       	mov    edx,0x1
+  401818:	be 01 00 00 00       	mov    esi,0x1
+  40181d:	bf 50 ed 40 00       	mov    edi,0x40ed50
+  401822:	e8 c4 44 00 00       	call   405ceb <__Pyx_RaiseArgtupleInvalid>
+  401827:	48 c7 45 f0 28 eb 40 	mov    QWORD PTR [rbp-0x10],0x40eb28
+  40182e:	00 
+  40182f:	c7 45 fc 05 00 00 00 	mov    DWORD PTR [rbp-0x4],0x5
+  401836:	e9 98 00 00 00       	jmp    4018d3 <__pyx_pw_12pytestnumber_1_isnumber+0x251>
+  40183b:	48 83 45 e0 01       	add    QWORD PTR [rbp-0x20],0x1
+  401840:	48 83 7d e0 00       	cmp    QWORD PTR [rbp-0x20],0x0
+  401845:	7e a9                	jle    4017f0 <__pyx_pw_12pytestnumber_1_isnumber+0x16e>
+  401847:	eb 26                	jmp    40186f <__pyx_pw_12pytestnumber_1_isnumber+0x1ed>
+  401849:	48 83 bd 78 ff ff ff 	cmp    QWORD PTR [rbp-0x88],0x1
+  401850:	01 
+  401851:	0f 95 c0             	setne  al
+  401854:	0f b6 c0             	movzx  eax,al
+  401857:	48 85 c0             	test   rax,rax
+  40185a:	75 44                	jne    4018a0 <__pyx_pw_12pytestnumber_1_isnumber+0x21e>
+  40185c:	48 8b 45 80          	mov    rax,QWORD PTR [rbp-0x80]
+  401860:	48 8b 00             	mov    rax,QWORD PTR [rax]
+  401863:	48 89 c7             	mov    rdi,rax
+  401866:	e8 fd fd ff ff       	call   401668 <__Pyx_NewRef>
+  40186b:	48 89 45 a0          	mov    QWORD PTR [rbp-0x60],rax
+  40186f:	48 8b 45 a0          	mov    rax,QWORD PTR [rbp-0x60]
+  401873:	48 89 45 c8          	mov    QWORD PTR [rbp-0x38],rax
+  401877:	90                   	nop
+  401878:	90                   	nop
+  401879:	48 8b 55 c8          	mov    rdx,QWORD PTR [rbp-0x38]
+  40187d:	48 8b 45 88          	mov    rax,QWORD PTR [rbp-0x78]
+  401881:	48 89 d6             	mov    rsi,rdx
+  401884:	48 89 c7             	mov    rdi,rax
+  401887:	e8 ae 00 00 00       	call   40193a <__pyx_pf_12pytestnumber__isnumber>
+  40188c:	48 89 45 b8          	mov    QWORD PTR [rbp-0x48],rax
+  401890:	48 c7 45 d0 00 00 00 	mov    QWORD PTR [rbp-0x30],0x0
+  401897:	00 
+  401898:	e9 90 00 00 00       	jmp    40192d <__pyx_pw_12pytestnumber_1_isnumber+0x2ab>
+  40189d:	90                   	nop
+  40189e:	eb 01                	jmp    4018a1 <__pyx_pw_12pytestnumber_1_isnumber+0x21f>
+  4018a0:	90                   	nop
+  4018a1:	48 8b 85 78 ff ff ff 	mov    rax,QWORD PTR [rbp-0x88]
+  4018a8:	49 89 c0             	mov    r8,rax
+  4018ab:	b9 01 00 00 00       	mov    ecx,0x1
+  4018b0:	ba 01 00 00 00       	mov    edx,0x1
+  4018b5:	be 01 00 00 00       	mov    esi,0x1
+  4018ba:	bf 50 ed 40 00       	mov    edi,0x40ed50
+  4018bf:	e8 27 44 00 00       	call   405ceb <__Pyx_RaiseArgtupleInvalid>
+  4018c4:	48 c7 45 f0 28 eb 40 	mov    QWORD PTR [rbp-0x10],0x40eb28
+  4018cb:	00 
+  4018cc:	c7 45 fc 05 00 00 00 	mov    DWORD PTR [rbp-0x4],0x5
+  4018d3:	48 c7 45 d8 00 00 00 	mov    QWORD PTR [rbp-0x28],0x0
+  4018da:	00 
+  4018db:	eb 16                	jmp    4018f3 <__pyx_pw_12pytestnumber_1_isnumber+0x271>
+  4018dd:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  4018e1:	48 8b 44 c5 a0       	mov    rax,QWORD PTR [rbp+rax*8-0x60]
+  4018e6:	48 89 c7             	mov    rdi,rax
+  4018e9:	e8 0f f4 ff ff       	call   400cfd <Py_XDECREF>
+  4018ee:	48 83 45 d8 01       	add    QWORD PTR [rbp-0x28],0x1
+  4018f3:	48 83 7d d8 00       	cmp    QWORD PTR [rbp-0x28],0x0
+  4018f8:	7e e3                	jle    4018dd <__pyx_pw_12pytestnumber_1_isnumber+0x25b>
+  4018fa:	48 8b 4d f0          	mov    rcx,QWORD PTR [rbp-0x10]
+  4018fe:	8b 55 fc             	mov    edx,DWORD PTR [rbp-0x4]
+  401901:	8b 45 c4             	mov    eax,DWORD PTR [rbp-0x3c]
+  401904:	89 c6                	mov    esi,eax
+  401906:	bf 5a ed 40 00       	mov    edi,0x40ed5a
+  40190b:	e8 b4 8a 00 00       	call   40a3c4 <__Pyx_AddTraceback>
+  401910:	b8 00 00 00 00       	mov    eax,0x0
+  401915:	eb 21                	jmp    401938 <__pyx_pw_12pytestnumber_1_isnumber+0x2b6>
+  401917:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+  40191b:	48 8b 44 c5 a0       	mov    rax,QWORD PTR [rbp+rax*8-0x60]
+  401920:	48 89 c7             	mov    rdi,rax
+  401923:	e8 d5 f3 ff ff       	call   400cfd <Py_XDECREF>
+  401928:	48 83 45 d0 01       	add    QWORD PTR [rbp-0x30],0x1
+  40192d:	48 83 7d d0 00       	cmp    QWORD PTR [rbp-0x30],0x0
+  401932:	7e e3                	jle    401917 <__pyx_pw_12pytestnumber_1_isnumber+0x295>
+  401934:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+  401938:	c9                   	leave
+  401939:	c3                   	ret
+
+000000000040193a <__pyx_pf_12pytestnumber__isnumber>:
+  40193a:	55                   	push   rbp
+  40193b:	48 89 e5             	mov    rbp,rsp
+  40193e:	48 81 ec c0 00 00 00 	sub    rsp,0xc0
+  401945:	48 89 bd 48 ff ff ff 	mov    QWORD PTR [rbp-0xb8],rdi
+  40194c:	48 89 b5 40 ff ff ff 	mov    QWORD PTR [rbp-0xc0],rsi
+  401953:	48 c7 45 f0 00 00 00 	mov    QWORD PTR [rbp-0x10],0x0
+  40195a:	00 
+  40195b:	48 c7 45 e8 00 00 00 	mov    QWORD PTR [rbp-0x18],0x0
+  401962:	00 
+  401963:	48 c7 45 e0 00 00 00 	mov    QWORD PTR [rbp-0x20],0x0
+  40196a:	00 
+  40196b:	48 c7 45 c8 00 00 00 	mov    QWORD PTR [rbp-0x38],0x0
+  401972:	00 
+  401973:	c7 45 b8 00 00 00 00 	mov    DWORD PTR [rbp-0x48],0x0
+  40197a:	48 c7 45 b0 00 00 00 	mov    QWORD PTR [rbp-0x50],0x0
+  401981:	00 
+  401982:	c7 45 ac 00 00 00 00 	mov    DWORD PTR [rbp-0x54],0x0
+  401989:	c7 45 fc 01 00 00 00 	mov    DWORD PTR [rbp-0x4],0x1
+  401990:	c7 45 f8 01 00 00 00 	mov    DWORD PTR [rbp-0x8],0x1
+  401997:	48 8b 85 40 ff ff ff 	mov    rax,QWORD PTR [rbp-0xc0]
+  40199e:	be 60 3c 41 00       	mov    esi,0x413c60
+  4019a3:	48 89 c7             	mov    rdi,rax
+  4019a6:	e8 3d f2 ff ff       	call   400be8 <Py_IS_TYPE>
+  4019ab:	85 c0                	test   eax,eax
+  4019ad:	0f 95 c0             	setne  al
+  4019b0:	0f b6 c0             	movzx  eax,al
+  4019b3:	48 85 c0             	test   rax,rax
+  4019b6:	75 18                	jne    4019d0 <__pyx_pf_12pytestnumber__isnumber+0x96>
+  4019b8:	48 8b 85 40 ff ff ff 	mov    rax,QWORD PTR [rbp-0xc0]
+  4019bf:	be e0 46 41 00       	mov    esi,0x4146e0
+  4019c4:	48 89 c7             	mov    rdi,rax
+  4019c7:	e8 1c f2 ff ff       	call   400be8 <Py_IS_TYPE>
+  4019cc:	85 c0                	test   eax,eax
+  4019ce:	74 58                	je     401a28 <__pyx_pf_12pytestnumber__isnumber+0xee>
+  4019d0:	48 8b 85 40 ff ff ff 	mov    rax,QWORD PTR [rbp-0xc0]
+  4019d7:	48 89 45 e0          	mov    QWORD PTR [rbp-0x20],rax
+  4019db:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  4019df:	48 89 85 78 ff ff ff 	mov    QWORD PTR [rbp-0x88],rax
+  4019e6:	48 8b 85 78 ff ff ff 	mov    rax,QWORD PTR [rbp-0x88]
+  4019ed:	8b 00                	mov    eax,DWORD PTR [rax]
+  4019ef:	89 85 74 ff ff ff    	mov    DWORD PTR [rbp-0x8c],eax
+  4019f5:	81 bd 74 ff ff ff ff 	cmp    DWORD PTR [rbp-0x8c],0xbfffffff
+  4019fc:	ff ff bf 
+  4019ff:	77 14                	ja     401a15 <__pyx_pf_12pytestnumber__isnumber+0xdb>
+  401a01:	8b 85 74 ff ff ff    	mov    eax,DWORD PTR [rbp-0x8c]
+  401a07:	8d 50 01             	lea    edx,[rax+0x1]
+  401a0a:	48 8b 85 78 ff ff ff 	mov    rax,QWORD PTR [rbp-0x88]
+  401a11:	89 10                	mov    DWORD PTR [rax],edx
+  401a13:	eb 01                	jmp    401a16 <__pyx_pf_12pytestnumber__isnumber+0xdc>
+  401a15:	90                   	nop
+  401a16:	48 c7 45 d8 00 00 00 	mov    QWORD PTR [rbp-0x28],0x0
+  401a1d:	00 
+  401a1e:	48 c7 45 d0 00 00 00 	mov    QWORD PTR [rbp-0x30],0x0
+  401a25:	00 
+  401a26:	eb 7a                	jmp    401aa2 <__pyx_pf_12pytestnumber__isnumber+0x168>
+  401a28:	48 c7 45 d8 ff ff ff 	mov    QWORD PTR [rbp-0x28],0xffffffffffffffff
+  401a2f:	ff 
+  401a30:	48 8b 85 40 ff ff ff 	mov    rax,QWORD PTR [rbp-0xc0]
+  401a37:	48 89 c7             	mov    rdi,rax
+  401a3a:	e8 c1 ec ff ff       	call   400700 <PyObject_GetIter@plt>
+  401a3f:	48 89 45 e0          	mov    QWORD PTR [rbp-0x20],rax
+  401a43:	48 83 7d e0 00       	cmp    QWORD PTR [rbp-0x20],0x0
+  401a48:	0f 94 c0             	sete   al
+  401a4b:	0f b6 c0             	movzx  eax,al
+  401a4e:	48 85 c0             	test   rax,rax
+  401a51:	74 14                	je     401a67 <__pyx_pf_12pytestnumber__isnumber+0x12d>
+  401a53:	48 c7 45 b0 28 eb 40 	mov    QWORD PTR [rbp-0x50],0x40eb28
+  401a5a:	00 
+  401a5b:	c7 45 b8 09 00 00 00 	mov    DWORD PTR [rbp-0x48],0x9
+  401a62:	e9 cf 05 00 00       	jmp    402036 <__pyx_pf_12pytestnumber__isnumber+0x6fc>
+  401a67:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  401a6b:	48 89 c7             	mov    rdi,rax
+  401a6e:	e8 f3 f0 ff ff       	call   400b66 <_Py_TYPE>
+  401a73:	48 8b 80 e0 00 00 00 	mov    rax,QWORD PTR [rax+0xe0]
+  401a7a:	48 89 45 d0          	mov    QWORD PTR [rbp-0x30],rax
+  401a7e:	48 83 7d d0 00       	cmp    QWORD PTR [rbp-0x30],0x0
+  401a83:	0f 94 c0             	sete   al
+  401a86:	0f b6 c0             	movzx  eax,al
+  401a89:	48 85 c0             	test   rax,rax
+  401a8c:	74 14                	je     401aa2 <__pyx_pf_12pytestnumber__isnumber+0x168>
+  401a8e:	48 c7 45 b0 28 eb 40 	mov    QWORD PTR [rbp-0x50],0x40eb28
+  401a95:	00 
+  401a96:	c7 45 b8 09 00 00 00 	mov    DWORD PTR [rbp-0x48],0x9
+  401a9d:	e9 94 05 00 00       	jmp    402036 <__pyx_pf_12pytestnumber__isnumber+0x6fc>
+  401aa2:	48 83 7d d0 00       	cmp    QWORD PTR [rbp-0x30],0x0
+  401aa7:	0f 94 c0             	sete   al
+  401aaa:	0f b6 c0             	movzx  eax,al
+  401aad:	48 85 c0             	test   rax,rax
+  401ab0:	0f 84 38 01 00 00    	je     401bee <__pyx_pf_12pytestnumber__isnumber+0x2b4>
+  401ab6:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  401aba:	be 60 3c 41 00       	mov    esi,0x413c60
+  401abf:	48 89 c7             	mov    rdi,rax
+  401ac2:	e8 21 f1 ff ff       	call   400be8 <Py_IS_TYPE>
+  401ac7:	85 c0                	test   eax,eax
+  401ac9:	0f 95 c0             	setne  al
+  401acc:	0f b6 c0             	movzx  eax,al
+  401acf:	48 85 c0             	test   rax,rax
+  401ad2:	74 7d                	je     401b51 <__pyx_pf_12pytestnumber__isnumber+0x217>
+  401ad4:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  401ad8:	48 89 c7             	mov    rdi,rax
+  401adb:	e8 51 f9 ff ff       	call   401431 <PyList_GET_SIZE>
+  401ae0:	48 89 45 90          	mov    QWORD PTR [rbp-0x70],rax
+  401ae4:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  401ae8:	48 3b 45 90          	cmp    rax,QWORD PTR [rbp-0x70]
+  401aec:	0f 8d 19 04 00 00    	jge    401f0b <__pyx_pf_12pytestnumber__isnumber+0x5d1>
+  401af2:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  401af6:	48 89 c7             	mov    rdi,rax
+  401af9:	e8 68 f0 ff ff       	call   400b66 <_Py_TYPE>
+  401afe:	be 00 00 00 02       	mov    esi,0x2000000
+  401b03:	48 89 c7             	mov    rdi,rax
+  401b06:	e8 5c f1 ff ff       	call   400c67 <PyType_HasFeature>
+  401b0b:	85 c0                	test   eax,eax
+  401b0d:	75 19                	jne    401b28 <__pyx_pf_12pytestnumber__isnumber+0x1ee>
+  401b0f:	b9 20 fc 40 00       	mov    ecx,0x40fc20
+  401b14:	ba fd 09 00 00       	mov    edx,0x9fd
+  401b19:	be 0b eb 40 00       	mov    esi,0x40eb0b
+  401b1e:	bf 71 ed 40 00       	mov    edi,0x40ed71
+  401b23:	e8 28 e9 ff ff       	call   400450 <__assert_fail@plt>
+  401b28:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  401b2c:	48 8b 40 18          	mov    rax,QWORD PTR [rax+0x18]
+  401b30:	48 8b 55 d8          	mov    rdx,QWORD PTR [rbp-0x28]
+  401b34:	48 c1 e2 03          	shl    rdx,0x3
+  401b38:	48 01 d0             	add    rax,rdx
+  401b3b:	48 8b 00             	mov    rax,QWORD PTR [rax]
+  401b3e:	48 89 c7             	mov    rdi,rax
+  401b41:	e8 22 fb ff ff       	call   401668 <__Pyx_NewRef>
+  401b46:	48 89 45 c8          	mov    QWORD PTR [rbp-0x38],rax
+  401b4a:	48 83 45 d8 01       	add    QWORD PTR [rbp-0x28],0x1
+  401b4f:	eb 75                	jmp    401bc6 <__pyx_pf_12pytestnumber__isnumber+0x28c>
+  401b51:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  401b55:	48 89 c7             	mov    rdi,rax
+  401b58:	e8 c8 f7 ff ff       	call   401325 <PyTuple_GET_SIZE>
+  401b5d:	48 89 45 98          	mov    QWORD PTR [rbp-0x68],rax
+  401b61:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  401b65:	48 3b 45 98          	cmp    rax,QWORD PTR [rbp-0x68]
+  401b69:	0f 8d 9f 03 00 00    	jge    401f0e <__pyx_pf_12pytestnumber__isnumber+0x5d4>
+  401b6f:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  401b73:	48 89 c7             	mov    rdi,rax
+  401b76:	e8 eb ef ff ff       	call   400b66 <_Py_TYPE>
+  401b7b:	be 00 00 00 04       	mov    esi,0x4000000
+  401b80:	48 89 c7             	mov    rdi,rax
+  401b83:	e8 df f0 ff ff       	call   400c67 <PyType_HasFeature>
+  401b88:	85 c0                	test   eax,eax
+  401b8a:	75 19                	jne    401ba5 <__pyx_pf_12pytestnumber__isnumber+0x26b>
+  401b8c:	b9 20 fc 40 00       	mov    ecx,0x40fc20
+  401b91:	ba 08 0a 00 00       	mov    edx,0xa08
+  401b96:	be 0b eb 40 00       	mov    esi,0x40eb0b
+  401b9b:	bf 89 ed 40 00       	mov    edi,0x40ed89
+  401ba0:	e8 ab e8 ff ff       	call   400450 <__assert_fail@plt>
+  401ba5:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  401ba9:	48 8b 55 d8          	mov    rdx,QWORD PTR [rbp-0x28]
+  401bad:	48 83 c2 04          	add    rdx,0x4
+  401bb1:	48 8b 04 d0          	mov    rax,QWORD PTR [rax+rdx*8]
+  401bb5:	48 89 c7             	mov    rdi,rax
+  401bb8:	e8 ab fa ff ff       	call   401668 <__Pyx_NewRef>
+  401bbd:	48 89 45 c8          	mov    QWORD PTR [rbp-0x38],rax
+  401bc1:	48 83 45 d8 01       	add    QWORD PTR [rbp-0x28],0x1
+  401bc6:	48 83 7d c8 00       	cmp    QWORD PTR [rbp-0x38],0x0
+  401bcb:	0f 94 c0             	sete   al
+  401bce:	0f b6 c0             	movzx  eax,al
+  401bd1:	48 85 c0             	test   rax,rax
+  401bd4:	0f 84 8a 00 00 00    	je     401c64 <__pyx_pf_12pytestnumber__isnumber+0x32a>
+  401bda:	48 c7 45 b0 28 eb 40 	mov    QWORD PTR [rbp-0x50],0x40eb28
+  401be1:	00 
+  401be2:	c7 45 b8 09 00 00 00 	mov    DWORD PTR [rbp-0x48],0x9
+  401be9:	e9 48 04 00 00       	jmp    402036 <__pyx_pf_12pytestnumber__isnumber+0x6fc>
+  401bee:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  401bf2:	48 8b 55 d0          	mov    rdx,QWORD PTR [rbp-0x30]
+  401bf6:	48 89 c7             	mov    rdi,rax
+  401bf9:	ff d2                	call   rdx
+  401bfb:	48 89 45 c8          	mov    QWORD PTR [rbp-0x38],rax
+  401bff:	48 83 7d c8 00       	cmp    QWORD PTR [rbp-0x38],0x0
+  401c04:	0f 94 c0             	sete   al
+  401c07:	0f b6 c0             	movzx  eax,al
+  401c0a:	48 85 c0             	test   rax,rax
+  401c0d:	74 55                	je     401c64 <__pyx_pf_12pytestnumber__isnumber+0x32a>
+  401c0f:	e8 bc e9 ff ff       	call   4005d0 <PyErr_Occurred@plt>
+  401c14:	48 89 45 a0          	mov    QWORD PTR [rbp-0x60],rax
+  401c18:	48 83 7d a0 00       	cmp    QWORD PTR [rbp-0x60],0x0
+  401c1d:	0f 84 ee 02 00 00    	je     401f11 <__pyx_pf_12pytestnumber__isnumber+0x5d7>
+  401c23:	48 8b 15 56 1e 01 00 	mov    rdx,QWORD PTR [rip+0x11e56]        # 413a80 <PyExc_StopIteration@@Base>
+  401c2a:	48 8b 45 a0          	mov    rax,QWORD PTR [rbp-0x60]
+  401c2e:	48 89 d6             	mov    rsi,rdx
+  401c31:	48 89 c7             	mov    rdi,rax
+  401c34:	e8 22 93 00 00       	call   40af5b <__Pyx_PyErr_GivenExceptionMatches>
+  401c39:	85 c0                	test   eax,eax
+  401c3b:	0f 94 c0             	sete   al
+  401c3e:	0f b6 c0             	movzx  eax,al
+  401c41:	48 85 c0             	test   rax,rax
+  401c44:	74 14                	je     401c5a <__pyx_pf_12pytestnumber__isnumber+0x320>
+  401c46:	48 c7 45 b0 28 eb 40 	mov    QWORD PTR [rbp-0x50],0x40eb28
+  401c4d:	00 
+  401c4e:	c7 45 b8 09 00 00 00 	mov    DWORD PTR [rbp-0x48],0x9
+  401c55:	e9 dc 03 00 00       	jmp    402036 <__pyx_pf_12pytestnumber__isnumber+0x6fc>
+  401c5a:	e8 61 ec ff ff       	call   4008c0 <PyErr_Clear@plt>
+  401c5f:	e9 ad 02 00 00       	jmp    401f11 <__pyx_pf_12pytestnumber__isnumber+0x5d7>
+  401c64:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  401c68:	48 89 45 88          	mov    QWORD PTR [rbp-0x78],rax
+  401c6c:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+  401c70:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+  401c74:	48 8b 45 88          	mov    rax,QWORD PTR [rbp-0x78]
+  401c78:	48 89 c7             	mov    rdi,rax
+  401c7b:	e8 7d f0 ff ff       	call   400cfd <Py_XDECREF>
+  401c80:	48 c7 45 c8 00 00 00 	mov    QWORD PTR [rbp-0x38],0x0
+  401c87:	00 
+  401c88:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  401c8c:	48 89 c7             	mov    rdi,rax
+  401c8f:	e8 d2 ee ff ff       	call   400b66 <_Py_TYPE>
+  401c94:	be 00 00 00 10       	mov    esi,0x10000000
+  401c99:	48 89 c7             	mov    rdi,rax
+  401c9c:	e8 c6 ef ff ff       	call   400c67 <PyType_HasFeature>
+  401ca1:	85 c0                	test   eax,eax
+  401ca3:	0f 95 c0             	setne  al
+  401ca6:	0f b6 c0             	movzx  eax,al
+  401ca9:	48 85 c0             	test   rax,rax
+  401cac:	74 14                	je     401cc2 <__pyx_pf_12pytestnumber__isnumber+0x388>
+  401cae:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  401cb2:	48 89 c7             	mov    rdi,rax
+  401cb5:	e8 11 41 00 00       	call   405dcb <__Pyx_PyUnicode_AsPy_UCS4>
+  401cba:	89 c0                	mov    eax,eax
+  401cbc:	48 89 45 c0          	mov    QWORD PTR [rbp-0x40],rax
+  401cc0:	eb 10                	jmp    401cd2 <__pyx_pf_12pytestnumber__isnumber+0x398>
+  401cc2:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  401cc6:	48 89 c7             	mov    rdi,rax
+  401cc9:	e8 4f 41 00 00       	call   405e1d <__Pyx__PyObject_Ord>
+  401cce:	48 89 45 c0          	mov    QWORD PTR [rbp-0x40],rax
+  401cd2:	b8 ff ff ff ff       	mov    eax,0xffffffff
+  401cd7:	48 39 45 c0          	cmp    QWORD PTR [rbp-0x40],rax
+  401cdb:	0f 94 c0             	sete   al
+  401cde:	0f b6 c0             	movzx  eax,al
+  401ce1:	48 85 c0             	test   rax,rax
+  401ce4:	74 14                	je     401cfa <__pyx_pf_12pytestnumber__isnumber+0x3c0>
+  401ce6:	48 c7 45 b0 28 eb 40 	mov    QWORD PTR [rbp-0x50],0x40eb28
+  401ced:	00 
+  401cee:	c7 45 b8 0a 00 00 00 	mov    DWORD PTR [rbp-0x48],0xa
+  401cf5:	e9 3c 03 00 00       	jmp    402036 <__pyx_pf_12pytestnumber__isnumber+0x6fc>
+  401cfa:	48 83 7d c0 2d       	cmp    QWORD PTR [rbp-0x40],0x2d
+  401cff:	0f 9e c0             	setle  al
+  401d02:	0f b6 c0             	movzx  eax,al
+  401d05:	89 45 bc             	mov    DWORD PTR [rbp-0x44],eax
+  401d08:	83 7d bc 00          	cmp    DWORD PTR [rbp-0x44],0x0
+  401d0c:	74 0c                	je     401d1a <__pyx_pf_12pytestnumber__isnumber+0x3e0>
+  401d0e:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [rbp-0x4],0x0
+  401d15:	e9 d9 01 00 00       	jmp    401ef3 <__pyx_pf_12pytestnumber__isnumber+0x5b9>
+  401d1a:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  401d1e:	48 89 c7             	mov    rdi,rax
+  401d21:	e8 40 ee ff ff       	call   400b66 <_Py_TYPE>
+  401d26:	be 00 00 00 10       	mov    esi,0x10000000
+  401d2b:	48 89 c7             	mov    rdi,rax
+  401d2e:	e8 34 ef ff ff       	call   400c67 <PyType_HasFeature>
+  401d33:	85 c0                	test   eax,eax
+  401d35:	0f 95 c0             	setne  al
+  401d38:	0f b6 c0             	movzx  eax,al
+  401d3b:	48 85 c0             	test   rax,rax
+  401d3e:	74 14                	je     401d54 <__pyx_pf_12pytestnumber__isnumber+0x41a>
+  401d40:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  401d44:	48 89 c7             	mov    rdi,rax
+  401d47:	e8 7f 40 00 00       	call   405dcb <__Pyx_PyUnicode_AsPy_UCS4>
+  401d4c:	89 c0                	mov    eax,eax
+  401d4e:	48 89 45 c0          	mov    QWORD PTR [rbp-0x40],rax
+  401d52:	eb 10                	jmp    401d64 <__pyx_pf_12pytestnumber__isnumber+0x42a>
+  401d54:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  401d58:	48 89 c7             	mov    rdi,rax
+  401d5b:	e8 bd 40 00 00       	call   405e1d <__Pyx__PyObject_Ord>
+  401d60:	48 89 45 c0          	mov    QWORD PTR [rbp-0x40],rax
+  401d64:	b8 ff ff ff ff       	mov    eax,0xffffffff
+  401d69:	48 39 45 c0          	cmp    QWORD PTR [rbp-0x40],rax
+  401d6d:	0f 94 c0             	sete   al
+  401d70:	0f b6 c0             	movzx  eax,al
+  401d73:	48 85 c0             	test   rax,rax
+  401d76:	74 14                	je     401d8c <__pyx_pf_12pytestnumber__isnumber+0x452>
+  401d78:	48 c7 45 b0 28 eb 40 	mov    QWORD PTR [rbp-0x50],0x40eb28
+  401d7f:	00 
+  401d80:	c7 45 b8 0c 00 00 00 	mov    DWORD PTR [rbp-0x48],0xc
+  401d87:	e9 aa 02 00 00       	jmp    402036 <__pyx_pf_12pytestnumber__isnumber+0x6fc>
+  401d8c:	48 83 7d c0 2e       	cmp    QWORD PTR [rbp-0x40],0x2e
+  401d91:	0f 94 c0             	sete   al
+  401d94:	0f b6 c0             	movzx  eax,al
+  401d97:	89 45 bc             	mov    DWORD PTR [rbp-0x44],eax
+  401d9a:	83 7d bc 00          	cmp    DWORD PTR [rbp-0x44],0x0
+  401d9e:	74 2c                	je     401dcc <__pyx_pf_12pytestnumber__isnumber+0x492>
+  401da0:	83 7d f8 01          	cmp    DWORD PTR [rbp-0x8],0x1
+  401da4:	0f 94 c0             	sete   al
+  401da7:	0f b6 c0             	movzx  eax,al
+  401daa:	89 45 bc             	mov    DWORD PTR [rbp-0x44],eax
+  401dad:	83 7d bc 00          	cmp    DWORD PTR [rbp-0x44],0x0
+  401db1:	74 0d                	je     401dc0 <__pyx_pf_12pytestnumber__isnumber+0x486>
+  401db3:	c7 45 f8 00 00 00 00 	mov    DWORD PTR [rbp-0x8],0x0
+  401dba:	90                   	nop
+  401dbb:	e9 33 01 00 00       	jmp    401ef3 <__pyx_pf_12pytestnumber__isnumber+0x5b9>
+  401dc0:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [rbp-0x4],0x0
+  401dc7:	e9 27 01 00 00       	jmp    401ef3 <__pyx_pf_12pytestnumber__isnumber+0x5b9>
+  401dcc:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  401dd0:	48 89 c7             	mov    rdi,rax
+  401dd3:	e8 8e ed ff ff       	call   400b66 <_Py_TYPE>
+  401dd8:	be 00 00 00 10       	mov    esi,0x10000000
+  401ddd:	48 89 c7             	mov    rdi,rax
+  401de0:	e8 82 ee ff ff       	call   400c67 <PyType_HasFeature>
+  401de5:	85 c0                	test   eax,eax
+  401de7:	0f 95 c0             	setne  al
+  401dea:	0f b6 c0             	movzx  eax,al
+  401ded:	48 85 c0             	test   rax,rax
+  401df0:	74 14                	je     401e06 <__pyx_pf_12pytestnumber__isnumber+0x4cc>
+  401df2:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  401df6:	48 89 c7             	mov    rdi,rax
+  401df9:	e8 cd 3f 00 00       	call   405dcb <__Pyx_PyUnicode_AsPy_UCS4>
+  401dfe:	89 c0                	mov    eax,eax
+  401e00:	48 89 45 c0          	mov    QWORD PTR [rbp-0x40],rax
+  401e04:	eb 10                	jmp    401e16 <__pyx_pf_12pytestnumber__isnumber+0x4dc>
+  401e06:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  401e0a:	48 89 c7             	mov    rdi,rax
+  401e0d:	e8 0b 40 00 00       	call   405e1d <__Pyx__PyObject_Ord>
+  401e12:	48 89 45 c0          	mov    QWORD PTR [rbp-0x40],rax
+  401e16:	b8 ff ff ff ff       	mov    eax,0xffffffff
+  401e1b:	48 39 45 c0          	cmp    QWORD PTR [rbp-0x40],rax
+  401e1f:	0f 94 c0             	sete   al
+  401e22:	0f b6 c0             	movzx  eax,al
+  401e25:	48 85 c0             	test   rax,rax
+  401e28:	74 14                	je     401e3e <__pyx_pf_12pytestnumber__isnumber+0x504>
+  401e2a:	48 c7 45 b0 28 eb 40 	mov    QWORD PTR [rbp-0x50],0x40eb28
+  401e31:	00 
+  401e32:	c7 45 b8 11 00 00 00 	mov    DWORD PTR [rbp-0x48],0x11
+  401e39:	e9 f8 01 00 00       	jmp    402036 <__pyx_pf_12pytestnumber__isnumber+0x6fc>
+  401e3e:	48 83 7d c0 2f       	cmp    QWORD PTR [rbp-0x40],0x2f
+  401e43:	0f 9e c0             	setle  al
+  401e46:	0f b6 c0             	movzx  eax,al
+  401e49:	89 45 84             	mov    DWORD PTR [rbp-0x7c],eax
+  401e4c:	83 7d 84 00          	cmp    DWORD PTR [rbp-0x7c],0x0
+  401e50:	74 0b                	je     401e5d <__pyx_pf_12pytestnumber__isnumber+0x523>
+  401e52:	8b 45 84             	mov    eax,DWORD PTR [rbp-0x7c]
+  401e55:	89 45 bc             	mov    DWORD PTR [rbp-0x44],eax
+  401e58:	e9 86 00 00 00       	jmp    401ee3 <__pyx_pf_12pytestnumber__isnumber+0x5a9>
+  401e5d:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  401e61:	48 89 c7             	mov    rdi,rax
+  401e64:	e8 fd ec ff ff       	call   400b66 <_Py_TYPE>
+  401e69:	be 00 00 00 10       	mov    esi,0x10000000
+  401e6e:	48 89 c7             	mov    rdi,rax
+  401e71:	e8 f1 ed ff ff       	call   400c67 <PyType_HasFeature>
+  401e76:	85 c0                	test   eax,eax
+  401e78:	0f 95 c0             	setne  al
+  401e7b:	0f b6 c0             	movzx  eax,al
+  401e7e:	48 85 c0             	test   rax,rax
+  401e81:	74 14                	je     401e97 <__pyx_pf_12pytestnumber__isnumber+0x55d>
+  401e83:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  401e87:	48 89 c7             	mov    rdi,rax
+  401e8a:	e8 3c 3f 00 00       	call   405dcb <__Pyx_PyUnicode_AsPy_UCS4>
+  401e8f:	89 c0                	mov    eax,eax
+  401e91:	48 89 45 c0          	mov    QWORD PTR [rbp-0x40],rax
+  401e95:	eb 10                	jmp    401ea7 <__pyx_pf_12pytestnumber__isnumber+0x56d>
+  401e97:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  401e9b:	48 89 c7             	mov    rdi,rax
+  401e9e:	e8 7a 3f 00 00       	call   405e1d <__Pyx__PyObject_Ord>
+  401ea3:	48 89 45 c0          	mov    QWORD PTR [rbp-0x40],rax
+  401ea7:	b8 ff ff ff ff       	mov    eax,0xffffffff
+  401eac:	48 39 45 c0          	cmp    QWORD PTR [rbp-0x40],rax
+  401eb0:	0f 94 c0             	sete   al
+  401eb3:	0f b6 c0             	movzx  eax,al
+  401eb6:	48 85 c0             	test   rax,rax
+  401eb9:	74 14                	je     401ecf <__pyx_pf_12pytestnumber__isnumber+0x595>
+  401ebb:	48 c7 45 b0 28 eb 40 	mov    QWORD PTR [rbp-0x50],0x40eb28
+  401ec2:	00 
+  401ec3:	c7 45 b8 11 00 00 00 	mov    DWORD PTR [rbp-0x48],0x11
+  401eca:	e9 67 01 00 00       	jmp    402036 <__pyx_pf_12pytestnumber__isnumber+0x6fc>
+  401ecf:	48 83 7d c0 39       	cmp    QWORD PTR [rbp-0x40],0x39
+  401ed4:	0f 9f c0             	setg   al
+  401ed7:	0f b6 c0             	movzx  eax,al
+  401eda:	89 45 84             	mov    DWORD PTR [rbp-0x7c],eax
+  401edd:	8b 45 84             	mov    eax,DWORD PTR [rbp-0x7c]
+  401ee0:	89 45 bc             	mov    DWORD PTR [rbp-0x44],eax
+  401ee3:	83 7d bc 00          	cmp    DWORD PTR [rbp-0x44],0x0
+  401ee7:	74 09                	je     401ef2 <__pyx_pf_12pytestnumber__isnumber+0x5b8>
+  401ee9:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [rbp-0x4],0x0
+  401ef0:	eb 01                	jmp    401ef3 <__pyx_pf_12pytestnumber__isnumber+0x5b9>
+  401ef2:	90                   	nop
+  401ef3:	83 7d fc 00          	cmp    DWORD PTR [rbp-0x4],0x0
+  401ef7:	0f 94 c0             	sete   al
+  401efa:	0f b6 c0             	movzx  eax,al
+  401efd:	89 45 bc             	mov    DWORD PTR [rbp-0x44],eax
+  401f00:	83 7d bc 00          	cmp    DWORD PTR [rbp-0x44],0x0
+  401f04:	75 76                	jne    401f7c <__pyx_pf_12pytestnumber__isnumber+0x642>
+  401f06:	e9 97 fb ff ff       	jmp    401aa2 <__pyx_pf_12pytestnumber__isnumber+0x168>
+  401f0b:	90                   	nop
+  401f0c:	eb 04                	jmp    401f12 <__pyx_pf_12pytestnumber__isnumber+0x5d8>
+  401f0e:	90                   	nop
+  401f0f:	eb 01                	jmp    401f12 <__pyx_pf_12pytestnumber__isnumber+0x5d8>
+  401f11:	90                   	nop
+  401f12:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  401f16:	48 89 85 68 ff ff ff 	mov    QWORD PTR [rbp-0x98],rax
+  401f1d:	48 8b 85 68 ff ff ff 	mov    rax,QWORD PTR [rbp-0x98]
+  401f24:	48 89 85 60 ff ff ff 	mov    QWORD PTR [rbp-0xa0],rax
+  401f2b:	48 8b 85 60 ff ff ff 	mov    rax,QWORD PTR [rbp-0xa0]
+  401f32:	8b 00                	mov    eax,DWORD PTR [rax]
+  401f34:	c1 e8 1f             	shr    eax,0x1f
+  401f37:	0f b6 c0             	movzx  eax,al
+  401f3a:	85 c0                	test   eax,eax
+  401f3c:	75 33                	jne    401f71 <__pyx_pf_12pytestnumber__isnumber+0x637>
+  401f3e:	48 8b 85 68 ff ff ff 	mov    rax,QWORD PTR [rbp-0x98]
+  401f45:	8b 00                	mov    eax,DWORD PTR [rax]
+  401f47:	8d 50 ff             	lea    edx,[rax-0x1]
+  401f4a:	48 8b 85 68 ff ff ff 	mov    rax,QWORD PTR [rbp-0x98]
+  401f51:	89 10                	mov    DWORD PTR [rax],edx
+  401f53:	48 8b 85 68 ff ff ff 	mov    rax,QWORD PTR [rbp-0x98]
+  401f5a:	8b 00                	mov    eax,DWORD PTR [rax]
+  401f5c:	85 c0                	test   eax,eax
+  401f5e:	75 12                	jne    401f72 <__pyx_pf_12pytestnumber__isnumber+0x638>
+  401f60:	48 8b 85 68 ff ff ff 	mov    rax,QWORD PTR [rbp-0x98]
+  401f67:	48 89 c7             	mov    rdi,rax
+  401f6a:	e8 21 e9 ff ff       	call   400890 <_Py_Dealloc@plt>
+  401f6f:	eb 01                	jmp    401f72 <__pyx_pf_12pytestnumber__isnumber+0x638>
+  401f71:	90                   	nop
+  401f72:	48 c7 45 e0 00 00 00 	mov    QWORD PTR [rbp-0x20],0x0
+  401f79:	00 
+  401f7a:	eb 6a                	jmp    401fe6 <__pyx_pf_12pytestnumber__isnumber+0x6ac>
+  401f7c:	90                   	nop
+  401f7d:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  401f81:	48 89 85 58 ff ff ff 	mov    QWORD PTR [rbp-0xa8],rax
+  401f88:	48 8b 85 58 ff ff ff 	mov    rax,QWORD PTR [rbp-0xa8]
+  401f8f:	48 89 85 50 ff ff ff 	mov    QWORD PTR [rbp-0xb0],rax
+  401f96:	48 8b 85 50 ff ff ff 	mov    rax,QWORD PTR [rbp-0xb0]
+  401f9d:	8b 00                	mov    eax,DWORD PTR [rax]
+  401f9f:	c1 e8 1f             	shr    eax,0x1f
+  401fa2:	0f b6 c0             	movzx  eax,al
+  401fa5:	85 c0                	test   eax,eax
+  401fa7:	75 33                	jne    401fdc <__pyx_pf_12pytestnumber__isnumber+0x6a2>
+  401fa9:	48 8b 85 58 ff ff ff 	mov    rax,QWORD PTR [rbp-0xa8]
+  401fb0:	8b 00                	mov    eax,DWORD PTR [rax]
+  401fb2:	8d 50 ff             	lea    edx,[rax-0x1]
+  401fb5:	48 8b 85 58 ff ff ff 	mov    rax,QWORD PTR [rbp-0xa8]
+  401fbc:	89 10                	mov    DWORD PTR [rax],edx
+  401fbe:	48 8b 85 58 ff ff ff 	mov    rax,QWORD PTR [rbp-0xa8]
+  401fc5:	8b 00                	mov    eax,DWORD PTR [rax]
+  401fc7:	85 c0                	test   eax,eax
+  401fc9:	75 12                	jne    401fdd <__pyx_pf_12pytestnumber__isnumber+0x6a3>
+  401fcb:	48 8b 85 58 ff ff ff 	mov    rax,QWORD PTR [rbp-0xa8]
+  401fd2:	48 89 c7             	mov    rdi,rax
+  401fd5:	e8 b6 e8 ff ff       	call   400890 <_Py_Dealloc@plt>
+  401fda:	eb 01                	jmp    401fdd <__pyx_pf_12pytestnumber__isnumber+0x6a3>
+  401fdc:	90                   	nop
+  401fdd:	48 c7 45 e0 00 00 00 	mov    QWORD PTR [rbp-0x20],0x0
+  401fe4:	00 
+  401fe5:	90                   	nop
+  401fe6:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+  401fea:	48 89 c7             	mov    rdi,rax
+  401fed:	e8 0b ed ff ff       	call   400cfd <Py_XDECREF>
+  401ff2:	8b 45 fc             	mov    eax,DWORD PTR [rbp-0x4]
+  401ff5:	48 98                	cdqe
+  401ff7:	48 89 c7             	mov    rdi,rax
+  401ffa:	e8 53 98 00 00       	call   40b852 <__Pyx_PyBool_FromLong>
+  401fff:	48 89 45 e0          	mov    QWORD PTR [rbp-0x20],rax
+  402003:	48 83 7d e0 00       	cmp    QWORD PTR [rbp-0x20],0x0
+  402008:	0f 94 c0             	sete   al
+  40200b:	0f b6 c0             	movzx  eax,al
+  40200e:	48 85 c0             	test   rax,rax
+  402011:	74 11                	je     402024 <__pyx_pf_12pytestnumber__isnumber+0x6ea>
+  402013:	48 c7 45 b0 28 eb 40 	mov    QWORD PTR [rbp-0x50],0x40eb28
+  40201a:	00 
+  40201b:	c7 45 b8 15 00 00 00 	mov    DWORD PTR [rbp-0x48],0x15
+  402022:	eb 12                	jmp    402036 <__pyx_pf_12pytestnumber__isnumber+0x6fc>
+  402024:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  402028:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+  40202c:	48 c7 45 e0 00 00 00 	mov    QWORD PTR [rbp-0x20],0x0
+  402033:	00 
+  402034:	eb 36                	jmp    40206c <__pyx_pf_12pytestnumber__isnumber+0x732>
+  402036:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  40203a:	48 89 c7             	mov    rdi,rax
+  40203d:	e8 bb ec ff ff       	call   400cfd <Py_XDECREF>
+  402042:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+  402046:	48 89 c7             	mov    rdi,rax
+  402049:	e8 af ec ff ff       	call   400cfd <Py_XDECREF>
+  40204e:	48 8b 4d b0          	mov    rcx,QWORD PTR [rbp-0x50]
+  402052:	8b 55 b8             	mov    edx,DWORD PTR [rbp-0x48]
+  402055:	8b 45 ac             	mov    eax,DWORD PTR [rbp-0x54]
+  402058:	89 c6                	mov    esi,eax
+  40205a:	bf 5a ed 40 00       	mov    edi,0x40ed5a
+  40205f:	e8 60 83 00 00       	call   40a3c4 <__Pyx_AddTraceback>
+  402064:	48 c7 45 e8 00 00 00 	mov    QWORD PTR [rbp-0x18],0x0
+  40206b:	00 
+  40206c:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  402070:	48 89 c7             	mov    rdi,rax
+  402073:	e8 85 ec ff ff       	call   400cfd <Py_XDECREF>
+  402078:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+  40207c:	c9                   	leave
+  40207d:	c3                   	ret
+
