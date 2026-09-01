@@ -110,7 +110,7 @@ _isnumber_dec_char:
 								     ; continue reading.
 
 _isnumber_notnum:
-	XOR   AX ,   AX					 ; Return 0 if true.
+	XOR   AX ,   AX					 ; Return 0 if false.
 
 _isnumber_exit:
 	RET
