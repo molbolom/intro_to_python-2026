@@ -7,6 +7,10 @@
 In the image, you can see the compiled python file is 99,424 bytes, and
 the c & assembly file are 14,464 bytes.
 
+In the timed-test.txt file, I created a bash script to time the execution
+of all three files. Both the python script and the compiled python code's
+execution time is pretty much identical. 
+
 The code below are what I wrote.
 
 # testnumber.h
@@ -65,6 +69,8 @@ int main(int argc, char **argv)
 ;----------------------------------------------------------------------------
 ;
 ;	_isnumber RAX, RDI
+;
+;   _isnumber can return a char, short, int, or a long
 ;
 ;	 char _isnumber(char *);
 ;	short _isnumber(char *);
